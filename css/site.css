@@ -5,6 +5,7 @@
     padding:10px;
     position: relative;
     text-align: center;
+    height: 200px;
 }
 
 body{
@@ -13,17 +14,80 @@ body{
 }
 
 
-.header-overlay{
-    background-color: rebeccapurple;
+#header-overlay{
+    background-color: rgb(192, 136, 248);
     z-index: 9;
     margin: 20px;
 }
 
+.gamecanvas{
+    border : 10px solid #464646;
+    background-color: #241050;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#boxcollide_buttons{
+    border :10px solid #ffffff;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+button.gamebutton{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.gamebutton#up{
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gamebutton#down{
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gamebutton#left{
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.gamebutton#right{
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
 
 p.info{
     color : white;
     padding: 5%;
 }
+
+.parallax-background {
+    /*The image used */
+    background-image: url('../img/vaporwave_medusa.png');
+    /*background-color: aliceblue;*/
+    /* Full height */
+    min-height: 1000px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 
 
@@ -69,8 +133,7 @@ p.info{
 /* Top Centered text */
 .top-centered {
     position: absolute;
-    top: 50px;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
