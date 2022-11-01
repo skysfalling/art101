@@ -1,6 +1,6 @@
 .header{
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    /* background-color: #000000; */
     font-size: 30px;
     padding:10px;
     position: relative;
@@ -9,10 +9,21 @@
 }
 
 body{
-    background-color: #000000;
+    /* background-color: #000000; */
     margin : 0px auto;
+    margin-left: 5%;
 }
 
+html {
+    background-color: rgb(184, 184, 184);
+    background-size: cover;
+    height: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    font-style: bold;
+}
 
 #header-overlay{
     background-color: rgb(192, 136, 248);
@@ -77,10 +88,10 @@ p.info{
 
 .parallax-background {
     /*The image used */
-    background-image: url('../img/vaporwave_medusa.png');
+    /*background-image: url('../img/vaporwave_medusa.png');*/
     /*background-color: aliceblue;*/
     /* Full height */
-    min-height: 1000px; 
+    min-height: 2000px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

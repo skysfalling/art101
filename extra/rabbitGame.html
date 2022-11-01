@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .gamecanvas {
+            border: 5px solid #000000;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body onload="startGame()">
+
+    <canvas id="gameCanvas" class=gamecanvas width="500" height="500"></canvas>
+
+    <script src="js/rabbitGame.js">
+    </script>
+
+
+    <div style="text-align:center;width:480px;">
+        <button onclick="moveup()">UP</button><br><br>
+        <button onclick="moveleft()">LEFT</button>
+        <button onclick="moveright()">RIGHT</button><br><br>
+        <button onclick="movedown()">DOWN</button>
+    </div>
+
+    <div style="text-align:center;width:1000px;">
+        <button onclick="reset()">RESET</button>
+    </div>
+
+    <div; style="position:fixed;left:750px; top:0px;">
+
+</body>
+
+</html>
