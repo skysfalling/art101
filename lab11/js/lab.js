@@ -3,20 +3,21 @@
 * License: Public Domain
 */
 
-$("#challenges")
-    .text('Challenges')
-    .click(function () { alert('hi'); });
+// VV button  . click to start function
+$("#c_button").click(function () { 
+    // VV div id you would like to change
+    //                              VV class you would like to toggle
+    $("#challenges").toggleClass("special");
+});
 
-$("#problems")
-    .text('Problems')
-    .click(function () { alert('hi'); });
+$("#p_button").click(function () { 
+    $("#problems").toggleClass("special");
+});
 
-$("#results")
-    .text('Results')
-    .click(function () { alert('RESULT'); });
+$("#r_button").click(function () { 
+    $("#results").toggleClass("special");
+});
 
-$("#output")
-    .text('Output')
-    .click(function () { 
-        $("#output").css("fontSize", "60px");
-    });
+$("#o_button").click(function () { 
+    $("#output").toggleClass("special");
+});

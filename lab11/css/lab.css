@@ -1,6 +1,21 @@
+.header{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-size: 30px;
+    width: 50%;
+}
+
 div#p{
     height: auto;
     z-index: 2;
     background-color: green;
 }
 
+
+.normal{
+    color: white;
+}
+
+.special{
+    background-color: purple;
+}
