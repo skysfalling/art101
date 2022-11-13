@@ -1,7 +1,19 @@
 .info{
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: aliceblue;
+}
+
+.info p {
+    color: red;
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+div #input{
+    margin-left: 2%;
+}
+
+
+.out_table{
+    margin-left: 2%;
+    color: blueviolet;
 }
