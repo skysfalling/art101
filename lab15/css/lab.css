@@ -1,0 +1,38 @@
+body {
+    background-color: lightblue;
+}
+
+#body_info{
+    margin-left: 1%;
+}
+
+#body_info p{
+    margin-left: 5%;
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0.235);
+    margin-left: 1%;
+    margin-right: 70%;
+}
+  
+.output{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100px;
+}
+
+#out_title{
+    font-size: 20px;
+}
+
+#activate{
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+div#user-name{
+    background-color: #AEADAD;
+    font-family: Copperplate;
+    color: white;
+}
