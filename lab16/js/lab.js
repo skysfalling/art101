@@ -8,22 +8,30 @@ URL = "https://xkcd.com/614/info.0.json";
 
 // attach click action to button
 $('#activate').click(function(){ 
-    $.ajax({
-        url: 'http://mysite.microsoft.sample.xyz.com/api/mycall',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+      $.ajax({
+        // The URL for the request (ENDPOINT)
+        url: URL,
+        // Whether this is a POST or GET request
+        type: "GET",
+
+        // The type of data we expect back
+        dataType : "json",
+        
+        // What do we do when the api call is successful
+        //   all the action goes in here
+        success: function(data) {
+            console.log(data);
+
+            $("#out_title").html(data.safe_title);
+            $("#image").attr("src", data.img);
         },
-        type: "POST", /* or type:"GET" or type:"PUT" */
-        dataType: "json",
-        data: {
-        },
-        success: function (result) {
-            console.log(result);
-        },
-        error: function () {
-            console.log("error");
+
+        // What we do if the api call fails
+        error: function (jqXHR, textStatus, errorThrown) { 
+            // do stuff
+            console.log("Error:", textStatus, errorThrown);
         }
-    })
+      })
 });
 
 
